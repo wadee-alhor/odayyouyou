@@ -3,192 +3,200 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عبسي | الموقع الرسمي</title>
+  <title>عدي يويو | الموقع الرسمي </title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="/_sdk/element_sdk.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
   <style>
-    * { font-family: 'Tajawal', sans-serif; box-sizing: border-box; }
+    * { font-family: 'Tajawal', 'Poppins', sans-serif; box-sizing: border-box; }
     
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    #app {
-      width: 100%;
-      height: 100%;
-    }
-    
-    .gradient-bg {
-      background: linear-gradient(135deg, #1a1410 0%, #2d2416 50%, #1f1812 100%);
-    }
-    
-    .glass-card {
-      background: rgba(255, 255, 255, 0.03);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    
-    .glow-text {
-      text-shadow: 0 0 40px rgba(255, 193, 7, 0.5);
-      animation: fadeInGlow 1s ease-in-out;
-    }
-    
-    @keyframes fadeInGlow {
-      from {
-        opacity: 0;
-        text-shadow: 0 0 20px rgba(255, 193, 7, 0.2);
-      }
-      to {
-        opacity: 1;
-        text-shadow: 0 0 40px rgba(255, 193, 7, 0.5);
-      }
-    }
-    
-    .nav-item {
-      position: relative;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-    
-    .nav-item::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #f59e0b, #fbbf24);
-      transition: all 0.3s ease;
-      transform: translateX(-50%);
-    }
-    
-    .nav-item:hover::after,
-    .nav-item.active::after {
-      width: 100%;
-    }
-    
-    .social-card {
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      animation: slideUp 0.6s ease-out backwards;
-    }
-    
-    .social-card:nth-child(1) { animation-delay: 0.1s; }
-    .social-card:nth-child(2) { animation-delay: 0.2s; }
-    .social-card:nth-child(3) { animation-delay: 0.3s; }
-    .social-card:nth-child(4) { animation-delay: 0.4s; }
-    .social-card:nth-child(5) { animation-delay: 0.5s; }
-    .social-card:nth-child(6) { animation-delay: 0.6s; }
-    
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .social-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      border-color: #f59e0b !important;
-    }
-    
-    @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 20px rgba(255, 193, 7, 0.3); }
-      50% { box-shadow: 0 0 40px rgba(255, 193, 7, 0.6); }
-    }
-    
-    .pulse-border {
-      animation: pulse-glow 2s ease-in-out infinite;
-    }
-    
-    .page-section {
-      display: none;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-      overflow: hidden;
-    }
-    
-    .page-content {
-      flex: 1;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    
-    .page-section.active {
-      display: flex;
-      opacity: 1;
-    }
-    
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    
-    ::-webkit-scrollbar-track {
-      background: #1a1410;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(180deg, #f59e0b, #fbbf24);
-      border-radius: 4px;
-    }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #2a1f18;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #2a1f18 0%, #3d2817 50%, #2f2318 100%);
+}
+
+.glass-card {
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 140, 60, 0.2);
+}
+
+.glow-text {
+  color: #D68C4B;
+  animation: fadeInGlow 1s ease-in-out;
+}
+
+@keyframes fadeInGlow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.nav-item {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #B8764D;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #D68C4B;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.social-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: slideUp 0.6s ease-out backwards;
+  border: 1px solid rgba(210, 140, 75, 0.3);
+  background: rgba(80, 50, 35, 0.85);
+}
+
+.social-card:nth-child(1) { animation-delay: 0.1s; }
+.social-card:nth-child(2) { animation-delay: 0.2s; }
+.social-card:nth-child(3) { animation-delay: 0.3s; }
+.social-card:nth-child(4) { animation-delay: 0.4s; }
+.social-card:nth-child(5) { animation-delay: 0.5s; }
+.social-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.social-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #D68C4B;
+  box-shadow: 0 12px 30px rgba(214, 140, 75, 0.35);
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(214, 140, 75, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(214, 140, 75, 0.7); }
+}
+
+.pulse-border {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.page-section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page-section.active {
+  display: flex;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff8c3c, #ff6b1a);
+  border-radius: 4px;
+}
+
+.achievement-card {
+  cursor: pointer;
+}
+
+.achievement-card img {
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover img {
+  transform: scale(1.05);
+}
   </style>
-  <style>body { box-sizing: border-box; }</style>
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" type="text/javascript"></script>
  </head>
- <body class="gradient-bg text-white" style="margin: 0; padding: 0;">
-  <div id="app" class="flex flex-col h-full w-full" style="width: 100%; height: 100%;">
-   <!-- Navigation -->
-   <nav class="glass-card sticky top-0 z-50 px-6 py-4 border-b border-amber-400/20 flex-shrink-0">
+ <body class="gradient-bg text-orange-200" style="margin: 0; padding: 0;">
+  <div id="app" class="flex flex-col h-full w-full" style="width: 100%; height: 100%;"><!-- Navigation -->
+   <nav class="glass-card sticky top-0 z-50 px-6 py-4 border-b border-orange-600 flex-shrink-0">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
      <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center text-lg font-bold pulse-border overflow-hidden">
-       <img src="https://media.discordapp.net/attachments/1325835895470952499/1481422878993027215/b62800a8-fe11-43d1-a9c6-8f77e42bdefa-fullsize.webp?ex=69b34211&is=69b1f091&hm=dd50d7d9de26479124f89c5fe0fce90eac97a38983037d4ddea1c8a067b55908&=&format=webp" alt="Logo" class="w-full h-full object-cover" loading="lazy" onerror="this.parentElement.textContent='ع';">
-      </div><span id="nav-title" class="text-xl font-bold text-amber-400">عبسي</span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center text-lg font-bold pulse-border overflow-hidden"><img src="https://cdn.discordapp.com/icons/738549193144270969/1054d6cae84f6f3c2046d69296933999.png?size=1024" alt="Logo" class="w-full h-full object-cover" loading="lazy" onerror="this.parentElement.textContent='O';">
+      </div><span id="nav-title" class="text-xl font-bold text-orange-400">odayyouyou</span>
      </div>
-     <div class="flex items-center gap-8">
-      <button onclick="showPage('home')" class="nav-item active text-sm font-medium" data-page="home">الرئيسية</button> <button onclick="showPage('social')" class="nav-item text-sm font-medium" data-page="social">التواصل</button> <button onclick="showPage('achievements')" class="nav-item text-sm font-medium" data-page="achievements">الإنجازات</button> <button onclick="showPage('stats')" class="nav-item text-sm font-medium" data-page="stats">
+     <div class="flex items-center gap-8"><button onclick="showPage('home')" class="nav-item active text-sm font-medium" data-page="home">الرئيسية</button> <button onclick="showPage('social')" class="nav-item text-sm font-medium" data-page="social">التواصل</button> <button onclick="showPage('achievements')" class="nav-item text-sm font-medium" data-page="achievements">الإنجازات</button>
      </div>
     </div>
    </nav><!-- Home Page -->
    <section id="page-home" class="page-section active">
     <div class="page-content">
-     <div class="flex-1 flex flex-col items-center justify-center px-6 py-12"><!-- Profile Section -->
+     <div class="flex-1 flex flex-col items-center justify-center px-6 py-12">
       <div class="text-center mb-12">
        <div class="relative inline-block mb-8">
-        <div class="w-40 h-40 rounded-full bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500 p-1 pulse-border flex items-center justify-center overflow-hidden">
-         <img src="https://media.discordapp.net/attachments/1325835895470952499/1481422878993027215/b62800a8-fe11-43d1-a9c6-8f77e42bdefa-fullsize.webp?ex=69b34211&is=69b1f091&hm=dd50d7d9de26479124f89c5fe0fce90eac97a38983037d4ddea1c8a067b55908&=&format=webp" alt="Profile" class="w-full h-full object-cover rounded-full" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #f59e0b, #fbbf24)'; this.alt='صورة شخصية';">
+        <div class="w-40 h-40 rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600 p-1 pulse-border flex items-center justify-center overflow-hidden"><img src="https://cdn.discordapp.com/icons/738549193144270969/1054d6cae84f6f3c2046d69296933999.png?size=1024" alt="Profile" class="w-full h-full object-cover rounded-full" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)'; this.alt='صورة شخصية';">
         </div>
        </div>
-       <h1 id="main-title" class="text-5xl font-black mb-4 bg-gradient-to-r from-amber-300 via-yellow-400 to-amber-400 bg-clip-text text-transparent glow-text">عبسي</h1>
-      </div><!-- Action Buttons -->
-      <div class="flex gap-4 mb-12"><button onclick="showPage('social')" class="px-8 py-3 bg-gradient-to-r from-amber-400 to-yellow-500 text-gray-900 rounded-full font-bold text-base hover:opacity-90 transition-all hover:scale-105 shadow-lg">تواصل معي</button> <button onclick="showPage('achievements')" class="px-8 py-3 glass-card rounded-full font-bold text-base hover:bg-white/10 transition-all border border-amber-400/30">شاهد أعمالي</button>
-      </div><!-- Developer Message -->
-      <div class="glass-card rounded-2xl p-8 max-w-2xl w-full border border-blue-400/20 relative overflow-hidden hover:border-blue-300/50 transition-all duration-300">
-       <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 rounded-2xl"></div>
+       <h1 id="main-title" class="text-5xl font-black mb-4 bg-gradient-to-r from-orange-400 via-orange-300 to-orange-400 bg-clip-text text-transparent glow-text">odayyouyou</h1>
+      </div>
+      <div class="flex gap-4 mb-12 flex-wrap justify-center"><button onclick="showPage('social')" class="px-8 py-3 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-full font-bold text-base hover:opacity-90 transition-all hover:scale-105 shadow-lg">تواصل معي</button> <button onclick="showPage('achievements')" class="px-8 py-3 glass-card rounded-full font-bold text-base text-orange-300 hover:bg-orange-950 transition-all border border-orange-600">شاهد أعمالي</button>
+      </div>
+      <div class="glass-card rounded-2xl p-8 max-w-2xl w-full border border-orange-600 relative overflow-hidden hover:border-orange-500 transition-all duration-300">
+       <div class="absolute inset-0 bg-gradient-to-r from-orange-900/20 to-orange-800/10 rounded-2xl"></div>
        <div class="relative z-10">
         <div class="flex items-center gap-3 mb-5">
          <div class="text-3xl">
-          💙
+          ❤️
          </div>
-         <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-300 to-indigo-400 bg-clip-text text-transparent">رسالة من المطور</h3>
+         <h3 class="text-2xl font-bold bg-gradient-to-r from-orange-300 to-orange-400 bg-clip-text text-transparent">رسالة من المطور وديع</h3>
         </div>
-        <p class="text-gray-200 leading-relaxed text-base"><span class="text-blue-400 font-bold"></span> <span class="text-amber-400 font-bold"></span>مرحبا بك السيد عبسي تم انشاء الموقع من متابعك وديع ان شاء الله يعجبك
+        <p id="dev-message" class="text-white leading-relaxed text-base">مرحبا بك السيد odayyouyou تم انشاء الموقع من متابعك وديع و حابب اقولك والله الغالي طولان و كل عام و انتا بخير و ان الموقع فقط للمزح و ان شاء الله يعجبك</p>
        </div>
       </div>
-     </div> 
-     <footer class="glass-card py-6 text-center border-t border-amber-400/20 flex-shrink-0">
-      <p class="text-gray-400">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-amber-400 font-bold">وديع</span></p>
+     </div>
+     <footer class="glass-card py-6 text-center border-t border-orange-600 flex-shrink-0">
+      <p class="text-white">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-orange-800 font-bold">وديع</span></p>
      </footer>
     </div>
    </section><!-- Social Media Page -->
@@ -196,45 +204,44 @@
     <div class="page-content">
      <div class="px-6 py-12">
       <div class="max-w-4xl mx-auto">
-       <h2 class="text-4xl font-black text-center mb-4 bg-gradient-to-r from-amber-300 to-yellow-400 bg-clip-text text-transparent">تواصل معي</h2>
-       <p class="text-gray-400 text-center mb-12">تابعني على منصات التواصل الاجتماعي</p>
-       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <a href="https://www.instagram.com/hanialqablan/" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-pink-500/50"> <img src="https://i.pinimg.com/1200x/7c/8e/45/7c8e45c5af7fbe90573e153b505eb3a5.jpg" alt="Instagram" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #E1306C 0%, #C13584 100%)';">
+       <h2 class="text-4xl font-black text-center mb-4 bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">تواصل معي</h2>
+       <p class="text-orange-200 text-center mb-12">تابعني على منصات التواصل الاجتماعي</p>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a href="https://www.instagram.com/oday_youyou" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/1200x/7c/8e/45/7c8e45c5af7fbe90573e153b505eb3a5.jpg" alt="Instagram" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">Instagram</h3>
-          <p class="text-gray-400">hanialqablan</p>
-          <p class="text-pink-400 text-sm mt-1">1.7M Follower</p>
-         </div></a> <a href="https://www.tiktok.com/@3absi1999" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500/50"> <img src="https://i.pinimg.com/1200x/71/a2/81/71a28136fbb96ce05bb763157170ef89.jpg" alt="TikTok" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #000000 0%, #1a1a1a 100%)';">
+          <h3 class="text-xl font-bold text-orange-300">Instagram</h3>
+          <p class="text-orange-400">oday_youyou</p>
+          <p class="text-orange-500 text-sm mt-1">57.5K متابع</p>
+         </div></a> <a href="https://www.tiktok.com/@oday_youyou" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/1200x/71/a2/81/71a28136fbb96ce05bb763157170ef89.jpg" alt="TikTok" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">TikTok</h3>
-          <p class="text-gray-400">3absi1999</p>
-          <p class="text-cyan-400 text-sm mt-1">5.2M Follower</p>
-         </div></a> <a href="https://www.youtube.com/@3ABSI2" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-red-500/50"> <img src="https://i.pinimg.com/736x/8e/ee/83/8eee8361b9c7e4fa463b9afbefffe529.jpg" alt="YouTube" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #FF0000 0%, #CC0000 100%)';">
+          <h3 class="text-xl font-bold text-orange-300">TikTok</h3>
+          <p class="text-orange-400">oday_youyou</p>
+          <p class="text-orange-500 text-sm mt-1">117.9K متابع</p>
+         </div></a> <a href="https://www.youtube.com/@youyouoday" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/736x/8e/ee/83/8eee8361b9c7e4fa463b9afbefffe529.jpg" alt="YouTube" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">YouTube</h3>
-          <p class="text-gray-400">3absi2</p>
-          <p class="text-red-400 text-sm mt-1">548K Follower</p>
-         </div></a> <a href="https://snapchat.com/add/absi_151" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-yellow-500/50"> <img src="https://i.pinimg.com/736x/b0/76/bc/b076bc1af81f6409591b390c1ef2b107.jpg" alt="Snapchat" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #FFFC00 0%, #FFD700 100%)';">
+          <h3 class="text-xl font-bold text-orange-300">YouTube</h3>
+          <p class="text-orange-400">youyouoday</p>
+          <p class="text-orange-500 text-sm mt-1">70K متابع</p>
+         </div></a> <a href="https://www.snapchat.com/@odayyouyou" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/736x/b0/76/bc/b076bc1af81f6409591b390c1ef2b107.jpg" alt="Snapchat" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">Snapchat</h3>
-          <p class="text-gray-400">absi_151</p>
-          <p class="text-yellow-400 text-sm mt-1">1M Follower</p>
-         </div></a> <a href="https://discord.com/invite/3absi" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-indigo-500/50"> <img src="https://i.pinimg.com/1200x/05/e5/50/05e55059d376644caab09ea1ef85700d.jpg" alt="Discord" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #7289DA 0%, #5a76d9 100%)';">
+          <h3 class="text-xl font-bold text-orange-300">Snapchat</h3>
+          <p class="text-orange-400">odayyouyou</p>
+          <p class="text-orange-500 text-sm mt-1">76K متابع</p>
+         </div></a> <a href="https://discord.gg/WZPTaBtc" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/1200x/05/e5/50/05e55059d376644caab09ea1ef85700d.jpg" alt="Discord" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">Discord</h3>
-          <p class="text-gray-400">absi</p>
-          <p class="text-indigo-400 text-sm mt-1">74K Follower</p>
-         </div></a> <a href="https://kick.com/absi" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-green-500/50"> <img src="https://i.pinimg.com/736x/75/3a/80/753a8026311b908da737fab513be953a.jpg" alt="Kick" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #10A652 0%, #0D7A3A 100%)';">
+          <h3 class="text-xl font-bold text-orange-300">Discord</h3>
+          <p class="text-orange-400">YOU YOU</p>
+          <p class="text-orange-500 text-sm mt-1">20684K متابع</p>
+         </div></a> <a href="https://kick.com/odayyouyou" target="_blank" rel="noopener noreferrer" class="social-card glass-card rounded-2xl overflow-hidden"> <img src="https://i.pinimg.com/736x/75/3a/80/753a8026311b908da737fab513be953a.jpg" alt="Kick" class="w-full h-40 object-cover rounded-t-xl" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          <div class="p-6">
-          <h3 class="text-xl font-bold">Kick</h3>
-          <p class="text-gray-400">absi</p>
-          <p class="text-green-400 text-sm mt-1">773K Follower</p>
+          <h3 class="text-xl font-bold text-orange-300">Kick</h3>
+          <p class="text-orange-400">odayyouyou</p>
+          <p class="text-orange-500 text-sm mt-1">250K متابع</p>
          </div></a>
        </div>
       </div>
      </div>
-     <footer class="glass-card py-6 text-center border-t border-amber-400/20 flex-shrink-0">
-      <p class="text-gray-400">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-amber-400 font-bold">وديع</span></p>
+     <footer class="glass-card py-6 text-center border-t border-orange-600 flex-shrink-0">
+      <p class="text-white">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-orange-800 font-bold">وديع</span></p>
      </footer>
     </div>
    </section><!-- Achievements Page -->
@@ -242,103 +249,46 @@
     <div class="page-content">
      <div class="px-6 py-12">
       <div class="max-w-4xl mx-auto">
-       <h2 class="text-4xl font-black text-center mb-4 bg-gradient-to-r from-amber-300 to-yellow-400 bg-clip-text text-transparent">إنجازاتي</h2>
-       <p class="text-gray-400 text-center mb-12">مسيرة من النجاح والتميز</p>
+       <h2 class="text-4xl font-black text-center mb-4 bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">الإنجازات</h2>
+       <p class="text-orange-200 text-center mb-12">مسيرة من النجاح والتميز</p>
        <div class="space-y-6">
-        <div class="glass-card rounded-2xl overflow-hidden border border-amber-400/20 hover:border-amber-300/50 transition-all duration-300">
-         <div class="h-48 w-full bg-gradient-to-br from-amber-500 to-yellow-600 overflow-hidden">
-          <img src="https://media.discordapp.net/attachments/1325835895470952499/1481456862733013102/image.png?ex=69b361b8&is=69b21038&hm=d5d3e1d88ec2528fa5b36822461b103a001042755a5a835f4f523295901c5f97&=&format=webp&quality=lossless"lt='achievement';">
+        <div class="glass-card rounded-2xl overflow-hidden border border-orange-600 hover:border-orange-500 transition-all duration-300 achievement-card" onclick="window.open('https://www.youtube.com/watch?v=rLdWIW72uBA&list=RDrLdWIW72uBA&start_radio=1', '_blank')">
+         <div class="h-48 w-full bg-gradient-to-br from-orange-600 to-orange-800 overflow-hidden"><img src="https://img.youtube.com/vi/rLdWIW72uBA/maxresdefault.jpg" alt="achievement" class="w-full h-full object-cover" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          </div>
          <div class="p-6">
-          <h3 class="text-xl font-bold mb-2"> المركز الاول في منصة الكيك على العالم ل سنة 2025 , 2026 </h3>
-          <p class="text-gray-400"> انه من افضل استريمر منصة الكيك و من اكثر المشاهدات ما شاء الله </p><span class="inline-block mt-3 px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">انجاز</span>
+          <h3 class="text-xl font-bold text-orange-200 mb-2">الغناء</h3>
+          <p class="text-orange-300">قام في غناء اغنية دس تراك كله بشيل و حققت نجاح اكثر من 33 الف مشاهدة و كان لديها قبول كثير و تفاعل</p><span class="inline-block mt-3 px-3 py-1 bg-orange-900 text-orange-300 rounded-full text-sm font-medium">الغناء</span>
          </div>
         </div>
-        <div class="glass-card rounded-2xl overflow-hidden border border-amber-400/20 hover:border-amber-300/50 transition-all duration-300">
-         <div class="h-48 w-full bg-gradient-to-br from-cyan-500 to-blue-600 overflow-hidden">
-          <img src= "https://i.pinimg.com/736x/5a/4b/88/5a4b889e0682704fc9fa39f6884f76a0.jpg"alt="500K" class="w-full h-full object-cover" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #06b6d4, #3b82f6)';">
+        <div class="glass-card rounded-2xl overflow-hidden border border-orange-600 hover:border-orange-500 transition-all duration-300">
+         <div class="h-48 w-full bg-gradient-to-br from-orange-600 to-orange-800 overflow-hidden"><img src="https://t2.tudocdn.net/608782?w=1920" alt="500K" class="w-full h-full object-cover" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          </div>
          <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">💎 500K متابع</h3>
-          <p class="text-gray-400"> جميع حسابات السوشل ميديا فيها اكثر من 500 الف متابع ما شاء الله<h3 class="inline-block mt-3 px-3 py-1 bg-amber-500/20 text-amber-400 rounded-full text-sm">انجاز</span>
+          <h3 class="text-xl font-bold text-orange-200 mb-2">احتراف الببجي</h3>
+          <p class="text-orange-300">قبل فترة من الان قام في لعب لعبة الببجي و الان هو من افضل الاشخاص في لعبة ببجي نتمنى له التوفيق</p><span class="inline-block mt-3 px-3 py-1 bg-orange-900 text-orange-300 rounded-full text-sm font-medium">لاعب محترف</span>
          </div>
         </div>
-     </footer>
-    </div>
-   </section><!-- Stats Page -->
-   <section id="page-stats" class="page-section">
-    <div class="page-content">
-     <div class="px-6 py-12">
-      <div class="max-w-4xl mx-auto">
-       <h2 class="text-4xl font-black text-center mb-4 bg-gradient-to-r from-amber-300 to-yellow-400 bg-clip-text text-transparent">إحصائياتي</h2>
-       <p class="text-gray-400 text-center mb-12">أرقام تتحدث عن النجاح</p>
-       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <div class="glass-card rounded-2xl p-6 text-center border border-amber-400/20">
-         <div class="text-4xl font-black bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent mb-2">
-          +3M
+        <div class="glass-card rounded-2xl overflow-hidden border border-orange-600 hover:border-orange-500 transition-all duration-300">
+         <div class="h-48 w-full bg-gradient-to-br from-orange-600 to-orange-800 overflow-hidden"><img src="https://cdn.discordapp.com/icons/738549193144270969/1054d6cae84f6f3c2046d69296933999.png?size=1024" alt="achievement3" class="w-full h-full object-cover" loading="lazy" onerror="this.style.background='linear-gradient(135deg, #fb923c, #f97316)';">
          </div>
-         <div class="text-gray-400 text-sm">
-          إجمالي المتابعين
-         </div>
-       </div>
-       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="glass-card rounded-2xl p-6 border border-amber-400/20">
-         <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><span>📊</span> توزيع المتابعين</h3>
-         <div class="space-y-4">
-          <div>
-           <div class="flex justify-between mb-2">
-            <span class="text-gray-400">Instagram</span> <span class="text-amber-400 font-bold">1.7M</span>
-           </div>
-           <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
-            <div class="h-full bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full" style="width: 50%;"></div>
-           </div>
-          </div>
-          <div>
-           <div class="flex justify-between mb-2">
-            <span class="text-gray-400">TikTok</span> <span class="text-yellow-400 font-bold">5.2M</span>
-           </div>
-           <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
-            <div class="h-full bg-gradient-to-r from-yellow-400 to-amber-300 rounded-full" style="width: 30%;"></div>
-           </div>
-          </div>
-          <div>
-           <div class="flex justify-between mb-2">
-            <span class="text-gray-400">YouTube</span> <span class="text-red-400 font-bold">548</span>
-           </div>
-           <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
-            <div class="h-full bg-gradient-to-r from-red-600 to-red-500 rounded-full" style="width: 16%;"></div>
-           </div>
-          </div>
-          <div>
-           <div class="flex justify-between mb-2">
-            <span class="text-gray-400">أخرى</span> <span class="text-amber-400 font-bold">+2M</span>
-           </div>
-           <div class="h-3 bg-gray-800 rounded-full overflow-hidden">
-            <div class="h-full bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full" style="width: 4%;"></div>
-           </div>
-          </div>
-         </div>
-         </div>
-        </div>
-        <div class="glass-card rounded-2xl p-6 md:col-span-2 border border-amber-400/20">
-         <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><span>💡</span> المهارات</h3>
-         <div class="flex flex-wrap gap-3">
-          <span class="px-4 py-2 bg-amber-500/20 text-amber-400 rounded-full text-sm font-medium">صناعة المحتوى</span> <span class="px-4 py-2 bg-yellow-500/20 text-yellow-400 rounded-full text-sm font-medium">انشاء بثوث مباشرة</span> <span class="px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium">لاعب و محترف كونتر </span> <span class="px-4 py-2 bg-amber-500/20 text-amber-400 rounded-full text-sm font-medium">يوجد لديه افضل مدير اعمال السيد حازم </span> <span class="px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-full text-sm font-medium">يوجد لديه افضل تيم غرفة و دسكورد</span> <span class="px-4 py-2 bg-red-500/20 text-red-400 rounded-full text-sm font-medium">افضل لاعب ببجي </span> <span class="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium">اوى استريمر في الشرق الاوسطية</span> <span class="px-4 py-2 bg-amber-500/20 text-amber-400 rounded-full text-sm font-medium">البرمجة</span>
+         <div class="p-6">
+          <h3 class="text-xl font-bold text-orange-200 mb-2">مجموعات عصابية</h3>
+          <p class="text-orange-300">يوجد لديه الكثير من العصابات الارهابية مثل جماعة معك او عصابة الياكوزا</p><span class="inline-block mt-3 px-3 py-1 bg-orange-900 text-orange-300 rounded-full text-sm font-medium">مسؤول عصابات و مجموعات ارهابية</span>
          </div>
         </div>
        </div>
       </div>
      </div>
-     <footer class="glass-card py-6 text-center border-t border-amber-400/20 flex-shrink-0">
-      <p class="text-gray-400">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-amber-400 font-bold">وديع</span></p>
+     <footer class="glass-card py-6 text-center border-t border-orange-600 flex-shrink-0">
+      <p class="text-white">جميع الحقوق محفوظة © 2026 | تصميم وتطوير <span class="text-orange-800 font-bold">وديع</span></p>
      </footer>
     </div>
    </section>
   </div>
   <script>
     const defaultConfig = {
-      site_title: 'عبسي',
-      bio_text: 'مبدع أردني شغوف بالتكنولوجيا والابتكار، أسعى لترك بصمة إيجابية في العالم الرقمي'
+      site_title: 'odayyouyou',
+      bio_text: 'مبدع ومحترف في صناعة المحتوى'
     };
 
     function showPage(pageName) {
@@ -369,11 +319,9 @@
       
       const navTitle = document.getElementById('nav-title');
       const mainTitle = document.getElementById('main-title');
-      const bioElement = document.getElementById('bio-text');
       
       if (navTitle) navTitle.textContent = siteTitle;
       if (mainTitle) mainTitle.textContent = siteTitle;
-      if (bioElement) bioElement.textContent = bioText;
     }
 
     function mapToCapabilities(config) {
@@ -401,5 +349,5 @@
       });
     }
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9daec69217415daa',t:'MTc3MzI3NjMyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dbb7d6002f25daa',t:'MTc3MzQwOTYzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
